@@ -1,8 +1,9 @@
-import { CardFooter } from "react-bootstrap"
+//import { Footer } from "react-bootstrap"
+import "./Footer.css";
 
 function Footer() {
   return (
-    <div className='main-footer' >
+    <div className='main-footer'  >
         <div className='container'>
             <div className='row'>
                 <div className='col'>
@@ -36,7 +37,7 @@ function Footer() {
                     </ul>
 
                 </div>
-                <div className='col'>
+                <div className='row'>
                     <p className='col-sm'>
 Copyright@{new Date().getFullYear()}.Kenya Tourism Board. All Rights Reserved. | Tours Kenya
                     </p>
