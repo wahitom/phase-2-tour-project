@@ -82,7 +82,7 @@ const data = [
         activity: "Cultural Events",
         image: ""
 
-    }
+    },
     {
         id: "14",
         activity: "Sailing",
