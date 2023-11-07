@@ -1,0 +1,46 @@
+{
+    "travels":[
+        {
+            "id":1 ,
+            "destination": "Maasai Mara",
+            "description": "Experience the untamed beauty of the Maasai Mara, a world-renowned wildlife sanctuary in Kenya. Embark on a thrilling adventure as you witness the iconic Great Migration, where millions of wildebeest and zebras traverse the vast plains in search of greener pastures. Explore the stunning landscapes of rolling savannah, acacia-dotted plains, and meandering rivers teeming with diverse wildlife",
+            "image": "https://www.masaimara.com/assets/img/masai-mara.jpg",
+            "prices": "$264"
+        },
+        {
+            "id":2 ,
+            "destination": "Diani",
+            "description": "Diani Beach, a tropical paradise along the Kenyan coast, beckons with its powder-white sands, crystal-clear turquoise waters, and swaying palm trees. This idyllic destination offers a perfect blend of relaxation and adventure. Stretching for miles, Diani Beach is a haven for sunseekers, water sports enthusiasts, and nature lovers alike.",
+            "image": "https://media.cnn.com/api/v1/images/stellar/prod/170720165140-kenya-beaches-diani-camels-on-the-beach-photo-courtesy-afrochic-diani-beach.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618",
+            "prices": "$364"
+        },
+        {
+            "id":3 ,
+            "destination": "Amboseli National Park",
+            "description": "Amboseli National Park, a jewel of Kenya's wildlife conservation, offers an awe-inspiring adventure at the foot of Mount Kilimanjaro, Africa's highest peak. With its iconic view of the snow-capped mountain serving as a backdrop to the park's vast savannah and acacia woodlands, Amboseli is a photographer's dream. This unique landscape is a sanctuary for a thriving elephant population, making it one of the best places in Africa to witness these magnificent creatures up close",
+            "image": "https://www.nairobinationalparkkenya.com/wp-content/uploads/2022/03/amboseli-NP-582x393-1.jpg",
+            "prices": "$200"
+        },
+        {
+            "id":4 ,
+            "destination": "Malindi",
+            "description": " Kenya's Coastal Gem. Explore pristine beaches, coral reefs, and vibrant culture. Dive into the Indian Ocean's beauty, visit historical landmarks, and savor Swahili cuisine. Discover paradise in Malindi!",
+            "image": "https://www.oceanbeachkenya.com/assets/images/mbanner/15a24a6716d0063d2af9331dd4fc8194.jpg",
+            "prices": "$150"
+        },
+        {
+            "id":5 ,
+            "destination": "Nakuru National Park",
+            "description": "On the floor of the Great Rift Valley, surrounded by wooded and bushy grassland, lies the beautiful Lake Nakuru National Park. Visitors can enjoy the wide ecological diversity and varied habitats that range from Lake Nakuru itself to the surrounding escarpment and picturesque ridges. Lake Nakuru National Park is ideal for bird watching, hiking,picnic and game drives.",
+            "image": "https://www.gorillatrekkingugandafromkigali.com/wp-content/uploads/2020/02/lake-nakuru-national-park.jpg",
+            "prices": "$230"
+        },
+        {
+            "id":6 ,
+            "destination": "Great Rift Valley Lodge",
+            "description": "The lodge sits at about 7,000 feet, from which elevation it enjoys magnificent views to the west and east. The Vistas stretch from the sparkling waters of Lake Naivasha to jogged volcanic crater of Mount Longonot and, beyond, the sloping shoulders of the Aberdare Mountains - Kenya's most important watershed",
+            "image": "https://cdn-images.go2africa.com/wp-content/uploads/2017/08/28082802/great-rift-valley-lodge-and-golf-resort-3351.jpg",
+            "prices": "$200"
+        }
+    ]
+}
