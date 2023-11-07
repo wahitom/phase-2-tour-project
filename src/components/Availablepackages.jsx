@@ -65,4 +65,4 @@ const Availablepackages = () => {
   );
 };
 
-export default Availablepackages;
+
