@@ -1,21 +1,25 @@
 import React from 'react'
-import { Button ,Card, CardText, Container} from 'react-bootstrap'
+import { Button ,Card, CardText, Container,Row,Col} from 'react-bootstrap'
 import './Destination.css'
 
 const Destination = () => {
   const handleViewPackage = () => {
      alert('View Package button clicked');
   };
+  
  
   return (
     <Container style={{
-      display:'flex',
-      flexDirection:'row'
+            display:'flex',
+      flexDirection:'column'
     }}>
-        <Card style={{ width: '18rem' }}>
+        
+         <Row>
+          <Col>
+        <Card style={{  width: '30rem'}}>
       <Card.Img variant="top" src= "https://www.masaimara.com/assets/img/masai-mara.jpg" />
       <Card.Body>
-        <Card.Title>MaasaiMara</Card.Title>
+        <Card.Title >MaasaiMara</Card.Title>
         <Card.Text>
         Experience the untamed beauty of the Maasai Mara, a world-renowned wildlife sanctuary in Kenya. Embark on a thrilling adventure as you witness the iconic Great Migration, where millions of wildebeest and zebras traverse the vast plains in search of greener pastures. Explore the stunning landscapes of rolling savannah, acacia-dotted plains, and meandering rivers teeming with diverse wildlife",
           
@@ -26,10 +30,12 @@ const Destination = () => {
         <Button onClick={handleViewPackage}> View Package</Button>
       </Card.Body>
     </Card>
+    </Col>
 
 
 
-    <Card style={{ width: '18rem' }}>
+    <Col>
+    <Card style={{  width :'30rem'}}>
       <Card.Img variant="top" src= "https://media.cnn.com/api/v1/images/stellar/prod/170720165140-kenya-beaches-diani-camels-on-the-beach-photo-courtesy-afrochic-diani-beach.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618" />
       <Card.Body>
         <Card.Title>Diani</Card.Title>
@@ -41,8 +47,14 @@ const Destination = () => {
         </CardText>
         <Button onClick={handleViewPackage}> View Package</Button>
       </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem' }}>
+      </Card>
+      </Col>
+      </Row>
+
+      <Row>
+        <Col>
+    
+    <Card style={{  width: '27rem'}}>
       <Card.Img variant="top" src=  "https://www.oceanbeachkenya.com/assets/images/mbanner/15a24a6716d0063d2af9331dd4fc8194.jpg"/>
       <Card.Body>
         <Card.Title>Malindi</Card.Title>
@@ -56,9 +68,12 @@ const Destination = () => {
         <Button onClick={handleViewPackage}> View Package</Button>
       </Card.Body>
     </Card>
-  
+    
+  </Col>
 
-    <Card style={{ width: '18rem' }}>
+  <Col>
+
+    <Card style={{  width: '30rem'}}>
       <Card.Img variant="top" src="https://www.nairobinationalparkkenya.com/wp-content/uploads/2022/03/amboseli-NP-582x393-1.jpg"/>
       <Card.Body>
         <Card.Title>Amboseli National park</Card.Title>
@@ -71,7 +86,16 @@ const Destination = () => {
         <Button onClick={handleViewPackage}> View Package</Button>
       </Card.Body>
     </Card>
-  
+    </Col>
+    </Row>
+
+    <Row>
+      <Col>
+      
+      
+      </Col>
+    </Row>
+      
     </Container>
   );
 }
