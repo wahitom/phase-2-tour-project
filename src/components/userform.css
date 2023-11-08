@@ -1,15 +1,4 @@
-form{
-    background-color: black;
-    color: white;
-    
-}
-input{
-    margin-left: 15px;
-    padding: 5px 20px;
-}
-
-.form-field{
-    padding: 10px 0px;
-    
-    
+*{
+    margin: 0;
+    padding: 0;
 }
