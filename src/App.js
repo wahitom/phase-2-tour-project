@@ -1,9 +1,10 @@
-import Availablepackages from "./components/Availablepackages";
+
 import Destination from "./components/Destination";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Offers from "./components/Offers";
+import Userform from "./components/Userform";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
      <NavBar/>
      <Home/>
      <Destination/>
-     <Availablepackages/>
+     <Userform/>
      <Offers/>
      <Footer/>
     </div>
