@@ -42,6 +42,36 @@ const Destination = () => {
         <Button onClick={handleViewPackage}> View Package</Button>
       </Card.Body>
     </Card>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src=  "https://www.oceanbeachkenya.com/assets/images/mbanner/15a24a6716d0063d2af9331dd4fc8194.jpg"/>
+      <Card.Body>
+        <Card.Title>Malindi</Card.Title>
+        <Card.Text>
+        " Kenya's Coastal Gem. Explore pristine beaches, coral reefs, and vibrant culture. Dive into the Indian Ocean's beauty, visit historical landmarks, and savor Swahili cuisine. Discover paradise in Malindi!",
+
+        </Card.Text>
+        <CardText>
+          prices :$150
+        </CardText>
+        <Button onClick={handleViewPackage}> View Package</Button>
+      </Card.Body>
+    </Card>
+  
+
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="https://www.nairobinationalparkkenya.com/wp-content/uploads/2022/03/amboseli-NP-582x393-1.jpg"/>
+      <Card.Body>
+        <Card.Title>Amboseli National park</Card.Title>
+        <Card.Text>
+        Amboseli National Park, a jewel of Kenya's wildlife conservation, offers an awe-inspiring adventure at the foot of Mount Kilimanjaro, Africa's highest peak. With its iconic view of the snow-capped mountain serving as a backdrop to the park's vast savannah and acacia woodlands, Amboseli is a photographer's dream. This unique landscape is a sanctuary for a thriving elephant population, making it one of the best places in Africa to witness these magnificent creatures up close",
+        </Card.Text>
+        <CardText>
+          prices : $ 200
+        </CardText>
+        <Button onClick={handleViewPackage}> View Package</Button>
+      </Card.Body>
+    </Card>
+  
     </Container>
   );
 }
