@@ -34,6 +34,9 @@ const MaasaiMara = () => {
                   src={destination.destinationImg}
                   style={{ width: "70vh", height: "40vh" }}
                 />
+                {/* <CardImgOverlay>
+                  <h1>{destination.destination}</h1>
+                </CardImgOverlay> */}
               </div>
               <div
                 style={{
@@ -44,15 +47,53 @@ const MaasaiMara = () => {
                 }}
               >
                 <Card.Body>
-                  <Card.Title>{destination.destination}</Card.Title>
+                  {/*  <Card.Title style={{ fontSize: "20px" }}>
+                    {destination.destination}
+                  </Card.Title> */}
+                  <h1 style={{ fontSize: "20px" }}>
+                    <strong> {destination.destination}</strong>
+                  </h1>
                   <Card.Text>
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    <div style={{ fontSize: "15px" }}>
+                      <p>
+                        <strong>
+                          Price Per Night :{destination.basicPrices} USD
+                        </strong>
+                      </p>
+
+                      <p>
+                        Bed and Breakfast Inclusive as you enjoy the stunning
+                        views of the {destination.destination}
+                      </p>
+                    </div>
                   </Card.Text>
-                  <Button variant="primary" onClick={togglePackages}>
-                    {showPackages ? "Hide Packages" : "See More packages"}
-                  </Button>
+                  <div>
+                    <Button
+                      variant="success"
+                      style={{
+                        marginBottom: "10px",
+                        fontSize: "15px",
+                        backgroundColor: "#1a4301",
+                      }}
+                    >
+                      Book Now!
+                    </Button>
+                  </div>
+                  <div>
+                    <Button
+                      variant="success"
+                      style={{
+                        marginBottom: "10px",
+                        fontSize: "15px",
+                        backgroundColor: "#1a4301",
+                      }}
+                      onClick={togglePackages}
+                    >
+                      {showPackages
+                        ? "Hide Packages"
+                        : "See More Package options"}
+                    </Button>
+                  </div>
                 </Card.Body>
               </div>
             </div>
@@ -60,7 +101,7 @@ const MaasaiMara = () => {
         </Col>
       </Row>
 
-      <Stack direction="horizontal" gap={3}>
+      <Stack direction="horizontal" gap={5}>
         {showPackages && (
           <Card style={{ width: "16rem", marginTop: "30px" }} className="p-2">
             <Card.Img
@@ -69,12 +110,32 @@ const MaasaiMara = () => {
               style={{ height: "30vh" }}
             />
             <Card.Body>
-              <Card.Title>{destination.threeDayer}</Card.Title>
+              <h6>
+                <strong>{destination.threeDayer}</strong>
+              </h6>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                <div style={{ fontSize: "15px" }}>
+                  <p>
+                    Enjoy a variety of activities we offer from the three day
+                    package including {destination.threeDayerActivity1} or{" "}
+                    {destination.threeDayerActivity2} or even{" "}
+                    {destination.threeDayerActivity3}
+                  </p>
+                  <p>
+                    <strong>Price: {destination.threeDayerPrices} USD</strong>
+                  </p>
+                </div>
               </Card.Text>
-              <Button variant="primary">See More packages</Button>
+              <Button
+                variant="success"
+                style={{
+                  marginBottom: "10px",
+                  fontSize: "15px",
+                  backgroundColor: "#1a4301",
+                }}
+              >
+                Book Now!
+              </Button>
             </Card.Body>
           </Card>
         )}
@@ -87,12 +148,33 @@ const MaasaiMara = () => {
               style={{ height: "30vh" }}
             />
             <Card.Body>
-              <Card.Title>{destination.fourDayer}</Card.Title>
+              <h6>
+                <strong>{destination.fourDayer}</strong>
+              </h6>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                <div style={{ fontSize: "15px" }}>
+                  <p>
+                    Stay for longer and enjoy our four day package including{" "}
+                    {destination.fourDayerActivity1} or{" "}
+                    {destination.fourDayerActivity2} or even{" "}
+                    {destination.fourDayerActivity3} and{" "}
+                    {destination.fourDayerActivity4}
+                  </p>
+                </div>
+                <p>
+                  <strong>Price: {destination.fourDayerPrices} USD</strong>
+                </p>
               </Card.Text>
-              <Button variant="primary">See More packages</Button>
+              <Button
+                variant="success"
+                style={{
+                  marginBottom: "10px",
+                  fontSize: "15px",
+                  backgroundColor: "#1a4301",
+                }}
+              >
+                Book Now!
+              </Button>
             </Card.Body>
           </Card>
         )}
@@ -105,12 +187,34 @@ const MaasaiMara = () => {
               style={{ height: "30vh" }}
             />
             <Card.Body>
-              <Card.Title>{destination.fiveDayer}</Card.Title>
+              <h6>
+                <strong>{destination.fiveDayer}</strong>
+              </h6>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                <div style={{ fontSize: "15px" }}>
+                  <p>
+                    Enjoy our five day package including activities such as{" "}
+                    {destination.fiveDayerActivity1} or{" "}
+                    {destination.fiveDayerActivity2} or even{" "}
+                    {destination.fiveDayerActivity3},{" "}
+                    {destination.fiveDayerActivity4} and{" "}
+                    {destination.fiveDayerActivity5}
+                  </p>
+                </div>
+                <p>
+                  <strong>Price: {destination.fiveDayerPrices} USD</strong>
+                </p>
               </Card.Text>
-              <Button variant="primary">See More packages</Button>
+              <Button
+                variant="success"
+                style={{
+                  marginBottom: "10px",
+                  fontSize: "15px",
+                  backgroundColor: "#1a4301",
+                }}
+              >
+                Book Now!
+              </Button>
             </Card.Body>
           </Card>
         )}
@@ -123,12 +227,32 @@ const MaasaiMara = () => {
               style={{ height: "30vh" }}
             />
             <Card.Body>
-              <Card.Title>{destination.weekend}</Card.Title>
+              <h6>
+                <strong>{destination.weekend}</strong>
+              </h6>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                <div style={{ fontSize: "15px" }}>
+                  <p>
+                    Enjoy our fun weekend activites package inclusive of Bed and
+                    Breakfast and activities such as{" "}
+                    {destination.weekendActivity1} and{" "}
+                    {destination.weekendActivity2}
+                  </p>
+                </div>
+                <p>
+                  <strong>Price: {destination.weekendPrices} USD</strong>
+                </p>
               </Card.Text>
-              <Button variant="primary">See More packages</Button>
+              <Button
+                variant="success"
+                style={{
+                  marginBottom: "10px",
+                  fontSize: "15px",
+                  backgroundColor: "#1a4301",
+                }}
+              >
+                Book Now!
+              </Button>
             </Card.Body>
           </Card>
         )}

@@ -31,12 +31,12 @@ const Maasaimara = [
     fiveDayer: "5 days getaway",
     fiveDayerImg:
       "https://images.unsplash.com/photo-1463183547458-6a2c760d0912?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    fiveDayerActivitiy1: "Game Drive",
-    fideDayerActivity2: "Bush Dinner",
+    fiveDayerActivity1: "Game Drive",
+    fiveDayerActivity2: "Bush Dinner",
     fiveDayerActivity3: "Cultural events",
     fiveDayerActivity4: "Camping",
     fiveDayerActivity5: "Bonfire",
-    fideDayerPrices: "550",
+    fiveDayerPrices: "550",
 
     //weekend package
     weekend: "Weekend Getaway",
@@ -126,7 +126,7 @@ const Diani = [
     //four day package
     fourDayer: "4 days getaway",
     fourDayerImg:
-      "https://images.unsplash.com/photo-1633161112703-70b4751e9a97?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1555895356-0e8de4bc0029?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     fourDayerActivity1: "Snorkeling",
     fourDayerActivity2: "Scuba Diving",
     fourDayerActivity3: "Canoeing",
@@ -137,7 +137,7 @@ const Diani = [
     //five day package
     fiveDayer: "5 days getaway",
     fiveDayerImg:
-      "https://images.unsplash.com/photo-1685380517621-16fa11c199d7?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1601387319276-1adf87ea10a5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     fiveDayerActivitiy1: "Snorkeling",
     fideDayerActivity2: "Sailing",
     fiveDayerActivity3: "Scuba Diving",
@@ -191,8 +191,8 @@ const Malindi = [
     fiveDayer: "5 days getaway",
     fiveDayerImg:
       "https://images.unsplash.com/photo-1517627043994-b991abb62fc8?q=80&w=1434&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    fiveDayerActivitiy1: "Snorkeling",
-    fideDayerActivity2: "Sailing",
+    fiveDayerActivity1: "Snorkeling",
+    fiveDayerActivity2: "Sailing",
     fiveDayerActivity3: "Scuba Diving",
     fiveDayerActivity4: "Beach Sports",
     fiveDayerActivity5: "Canoeing",
@@ -312,7 +312,7 @@ const RiftValleyLodge = [
     weekendPrices: "300",
 
     oneNightStay: "Price Per Night",
-    basicPrices: "200",
+    basicPrices: "160",
   },
 ];
 

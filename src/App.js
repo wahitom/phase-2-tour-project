@@ -5,6 +5,10 @@ function App() {
   return (
     <div>
       <Availablepackages />
+
+      <br />
+
+      <Footer />
     </div>
   );
 }
