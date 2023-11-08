@@ -88,6 +88,3 @@ const data = [
         id: "14",
         activity: "Sailing",
         image: ""
-
-    }
-]
