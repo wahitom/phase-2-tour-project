@@ -18,7 +18,7 @@ function App() {
         <Route path="/availablepackages" element={<Availablepackages />} />
         <Route path="/offers" element={<Offers />} />
       </Routes>
-      <Userform />
+      
       <Footer />
     </>
   );
