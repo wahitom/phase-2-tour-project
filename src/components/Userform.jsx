@@ -20,7 +20,7 @@ const Userform = () => {
     }, [])
 
     return (
-        <Container fluid>
+        <div>
             <Form className='form bg-dark text-white'>
                 <Row>
                     <Col>
@@ -96,7 +96,7 @@ const Userform = () => {
                     <Button >Submit</Button>
                 </Row>
             </Form>
-        </Container>
+            </div>
     );
 }
 

@@ -7,6 +7,7 @@ import Offers from "./components/Offers";
 import Destination from "./components/Destination";
 import Home from "./components/Home";
 import Footer  from "./components/Footer";
+import Userform from "./components/Userform";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       {/* <Route path="/availablepackages" element={<Availablepackages />} /> */}
       <Route path="/offers" element={<Offers />} />
     </Routes>
-    
+    <Userform />
     <Footer />
     </>
   );
