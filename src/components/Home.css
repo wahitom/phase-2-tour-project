@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.homepage{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   /*  background: url('https://theworldpursuit.com/wp-content/uploads/2019/01/Africa-Travel-Tips.jpg'); */
+    width: 100%;
+}
+img{
+    height: 78vh;
+    position: absolute;
+}
+.content{
+    align-items: center;
+   
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.Link{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 14px 50px;
+    border-radius: 50px;
+    margin-top: 60;
+}
