@@ -5,7 +5,11 @@
             "destination": "Maasai Mara",
             "description": "Experience the untamed beauty of the Maasai Mara, a world-renowned wildlife sanctuary in Kenya. Embark on a thrilling adventure as you witness the iconic Great Migration, where millions of wildebeest and zebras traverse the vast plains in search of greener pastures. Explore the stunning landscapes of rolling savannah, acacia-dotted plains, and meandering rivers teeming with diverse wildlife",
             "image": "https://www.masaimara.com/assets/img/masai-mara.jpg",
-            "prices": "$264"
+            "prices": "$264",
+            "offer": {
+                "May": "15%",
+                "August and September":"10%"
+            }
         },
         {
             "id":2 ,
@@ -26,14 +30,24 @@
             "destination": "Malindi",
             "description": " Kenya's Coastal Gem. Explore pristine beaches, coral reefs, and vibrant culture. Dive into the Indian Ocean's beauty, visit historical landmarks, and savor Swahili cuisine. Discover paradise in Malindi!",
             "image": "https://www.oceanbeachkenya.com/assets/images/mbanner/15a24a6716d0063d2af9331dd4fc8194.jpg",
-            "prices": "$150"
+            "prices": "$150",
+            "offer": {
+                "January and February": "20%",
+                "May": "15%",
+                "August and September":"10%"
+            }
         },
         {
             "id":5 ,
             "destination": "Nakuru National Park",
             "description": "On the floor of the Great Rift Valley, surrounded by wooded and bushy grassland, lies the beautiful Lake Nakuru National Park. Visitors can enjoy the wide ecological diversity and varied habitats that range from Lake Nakuru itself to the surrounding escarpment and picturesque ridges. Lake Nakuru National Park is ideal for bird watching, hiking,picnic and game drives.",
             "image": "https://www.gorillatrekkingugandafromkigali.com/wp-content/uploads/2020/02/lake-nakuru-national-park.jpg",
-            "prices": "$230"
+            "prices": "$230",
+            "offer": {
+                "January and February": "10%",
+                "May": "8%",
+                "August and September":"5%"
+            }
         },
         {
             "id":6 ,
@@ -44,3 +58,4 @@
         }
     ]
 }
+
