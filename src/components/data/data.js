@@ -75,55 +75,5 @@ const data = [
     image: "",
   },
 ];
-const destinationPackages = [
-  {
-    id: "1",
-    destination: "Maasai Mara",
-    package1: "3 days getaway",
-    package2: "5 days getaway",
-    package3: "7 days getaway",
-    package4: "weekend getaway",
-  },
-  {
-    id: "2",
-    destination: "Diani",
-    package1: "3 days getaway",
-    package2: "5 days getaway",
-    package3: "7 days getaway",
-    package4: "weekend getaway",
-  },
-  {
-    id: "3",
-    destination: "Amboseli National Park",
-    package1: "3 days getaway",
-    package2: "5 days getaway",
-    package3: "7 days getaway",
-    package4: "weekend getaway",
-  },
-  {
-    id: "4",
-    destination: "Malindi",
-    package1: "3 days getaway",
-    package2: "5 days getaway",
-    package3: "7 days getaway",
-    package4: "weekend getaway",
-  },
-  {
-    id: "5",
-    destination: "Nakuru National Park",
-    package1: "3 days getaway",
-    package2: "5 days getaway",
-    package3: "7 days getaway",
-    package4: "weekend getaway",
-  },
-  {
-    id: "6",
-    destination: "Great Rift Valley Lodge",
-    package1: "3 days getaway",
-    package2: "5 days getaway",
-    package3: "7 days getaway",
-    package4: "weekend getaway",
-  },
-];
 
-export { data, destinationPackages };
+export { data };

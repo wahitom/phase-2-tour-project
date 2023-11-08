@@ -1,4 +1,4 @@
-const MaasaiMara = [
+const Maasaimara = [
   {
     id: "1",
     destination: "Maasai Mara",
@@ -9,10 +9,7 @@ const MaasaiMara = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "350",
-  },
-  {
-    id: "2",
-    destination: "Maasai Mara",
+
     fourDayer: "4 days getaway",
     fourDayerActivity1: "Game Drive",
     fourDayerActivity2: "Hot air Ballooning",
@@ -20,10 +17,7 @@ const MaasaiMara = [
     fourDayerActivity4: "Camping",
     fourDayerActivity5: "",
     fourDayerPrices: "450",
-  },
-  {
-    id: "3",
-    destination: "Maasai Mara",
+
     fiveDayer: "5 days getaway",
     fiveDayerActivitiy1: "Game Drive",
     fideDayerActivity2: "Bush Dinner",
@@ -31,18 +25,12 @@ const MaasaiMara = [
     fiveDayerActivity4: "Camping",
     fiveDayerActivity5: "Bonfire",
     fideDayerPrices: "550",
-  },
-  {
-    id: "4",
-    destination: "Maasai Mara",
+
     weekend: "Weekend GetAway",
     weekendActivity1: "Game Drive",
     weekendActivity2: "Bonfire",
     weekendPrices: "300",
-  },
-  {
-    id: "5",
-    destination: "Maasai Mara",
+
     oneNightStay: "Price Per Night",
     basicPrices: "264",
   },
@@ -59,10 +47,7 @@ const Amboseli = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "400",
-  },
-  {
-    id: "2",
-    destination: "Amboseli National Park",
+
     fourDayer: "4 days getaway",
     fourDayerActivity1: "Game Drive",
     fourDayerActivity2: "Bush Dinner",
@@ -70,10 +55,7 @@ const Amboseli = [
     fourDayerActivity4: "Camping",
     fourDayerActivity5: "",
     fourDayerPrices: "550",
-  },
-  {
-    id: "3",
-    destination: "Amboseli National Park",
+
     fiveDayer: "5 days getaway",
     fiveDayerActivitiy1: "Game Drive",
     fideDayerActivity2: "Bush Dinner",
@@ -81,18 +63,12 @@ const Amboseli = [
     fiveDayerActivity4: "Camping",
     fiveDayerActivity5: "Bonfire",
     fiveDayerPrices: "650",
-  },
-  {
-    id: "4",
-    destination: "Amboseli National Park",
+
     weekend: "Weekend GetAway",
     weekendActivity1: "Game Drive",
     weekendActivity2: "camping",
     weekendPrices: "350",
-  },
-  {
-    id: "5",
-    destination: "Amboseli National Park",
+
     oneNightStay: "Price Per Night",
     basicPrices: "200",
   },
@@ -109,10 +85,7 @@ const Diani = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "350",
-  },
-  {
-    id: "2",
-    destination: "Diani",
+
     fourDayer: "4 days getaway",
     fourDayerActivity1: "Snorkeling",
     fourDayerActivity2: "Scuba Diving",
@@ -120,10 +93,7 @@ const Diani = [
     fourDayerActivity4: "Swimming",
     fourDayerActivity5: "",
     fourDayerPrices: "450",
-  },
-  {
-    id: "3",
-    destination: "Diani",
+
     fiveDayer: "5 days getaway",
     fiveDayerActivitiy1: "Snorkeling",
     fideDayerActivity2: "Sailing",
@@ -131,18 +101,12 @@ const Diani = [
     fiveDayerActivity4: "Beach Sports",
     fiveDayerActivity5: "Canoeing",
     fiveDayerPrices: "550",
-  },
-  {
-    id: "4",
-    destination: "Diani",
+
     weekend: "Weekend GetAway",
     weekendActivity1: "Canoeing",
     weekendActivity2: "Snorkeling",
     weekendPrices: "300",
-  },
-  {
-    id: "5",
-    destination: "Diani",
+
     oneNightStay: "Price Per Night",
     basicPrices: "264",
   },
@@ -159,10 +123,7 @@ const Malindi = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "350",
-  },
-  {
-    id: "2",
-    destination: "Diani",
+
     fourDayer: "4 days getaway",
     fourDayerActivity1: "Snorkeling",
     fourDayerActivity2: "Scuba Diving",
@@ -170,10 +131,7 @@ const Malindi = [
     fourDayerActivity4: "Swimming",
     fourDayerActivity5: "",
     fourDayerPrices: "450",
-  },
-  {
-    id: "3",
-    destination: "Diani",
+
     fiveDayer: "5 days getaway",
     fiveDayerActivitiy1: "Snorkeling",
     fideDayerActivity2: "Sailing",
@@ -181,21 +139,98 @@ const Malindi = [
     fiveDayerActivity4: "Beach Sports",
     fiveDayerActivity5: "Canoeing",
     fiveDayerPrices: "550",
-  },
-  {
-    id: "4",
-    destination: "Diani",
+
     weekend: "Weekend GetAway",
     weekendActivity1: "Canoeing",
     weekendActivity2: "Snorkeling",
     weekendPrices: "300",
-  },
-  {
-    id: "5",
-    destination: "Diani",
+
     oneNightStay: "Price Per Night",
-    basicPrices: "264",
+    basicPrices: "150",
   },
 ];
 
-export { maasaiMara };
+const NakuruNationalPark = [
+  {
+    id: "1",
+    destination: "Nakuru National Park",
+    threeDayer: "3 days getaway",
+    threeDayerActivity1: "Hiking",
+    threeDayerActivity2: "Camping",
+    threeDayerActivity3: "Hot air ballooning",
+    threeDayerActivity4: "",
+    threeDayerActivity5: "",
+    threeDayerPrices: "350",
+
+    fourDayer: "4 days getaway",
+    fourDayerActivity1: "Game Drive",
+    fourDayerActivity2: "Camping",
+    fourDayerActivity3: "Bonfire",
+    fourDayerActivity4: "Bush Dinner",
+    fourDayerActivity5: "",
+    fourDayerPrices: "450",
+
+    fiveDayer: "5 days getaway",
+    fiveDayerActivitiy1: "Game Drive",
+    fideDayerActivity2: "Hot Air Balloon",
+    fiveDayerActivity3: "Hiking",
+    fiveDayerActivity4: "Bonfire",
+    fiveDayerActivity5: "Bush Dinner",
+    fiveDayerPrices: "550",
+
+    weekend: "Weekend GetAway",
+    weekendActivity1: "Bush Dinner",
+    weekendActivity2: "Game Drive",
+    weekendPrices: "300",
+
+    oneNightStay: "Price Per Night",
+    basicPrices: "230",
+  },
+];
+
+const RiftValleyLodge = [
+  {
+    id: "1",
+    destination: "Great Rift Valley Lodge",
+    threeDayer: "3 days getaway",
+    threeDayerActivity1: "Camping",
+    threeDayerActivity2: "Game Drive",
+    threeDayerActivity3: "Bird Watching",
+    threeDayerActivity4: "",
+    threeDayerActivity5: "",
+    threeDayerPrices: "350",
+
+    fourDayer: "4 days getaway",
+    fourDayerActivity1: "Game Drive",
+    fourDayerActivity2: "Bush Dinner",
+    fourDayerActivity3: "Bonfire",
+    fourDayerActivity4: "Hiking",
+    fourDayerActivity5: "",
+    fourDayerPrices: "450",
+
+    fiveDayer: "5 days getaway",
+    fiveDayerActivitiy1: "Game Drive",
+    fideDayerActivity2: "Camping",
+    fiveDayerActivity3: "Hiking",
+    fiveDayerActivity4: "Bonfire",
+    fiveDayerActivity5: "Hot Air Ballooning",
+    fiveDayerPrices: "550",
+
+    weekend: "Weekend GetAway",
+    weekendActivity1: "Game Drive",
+    weekendActivity2: "Camping",
+    weekendPrices: "300",
+
+    oneNightStay: "Price Per Night",
+    basicPrices: "200",
+  },
+];
+
+export {
+  Maasaimara,
+  Amboseli,
+  NakuruNationalPark,
+  RiftValleyLodge,
+  Malindi,
+  Diani,
+};

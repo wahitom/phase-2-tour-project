@@ -1,9 +1,10 @@
+import Availablepackages from "./components/Availablepackages";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div >
-      
+    <div>
+      <Availablepackages />
     </div>
   );
 }
