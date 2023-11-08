@@ -6,12 +6,7 @@ import Destination from "./components/Destination";
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/destination" element={<Destination />}
-       />
-    </Routes>
+     
     </div>
   );
 }
