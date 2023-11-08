@@ -11,7 +11,7 @@ import Amboseli from "./PackagesChild/Amboseli";
 
 const Availablepackages = () => {
   return (
-    <Stack gap={3} style={{ padding: "20px", backgroundColor: "#efefef" }}>
+    <Stack gap={3} style={{ padding: "20px",  }}>
       <MaasaiMara className="p-2" />
       <Diani className="p-2" />
       <Malindi className="p-2" />

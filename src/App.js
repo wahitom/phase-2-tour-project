@@ -6,10 +6,11 @@ import Destination from "./components/Destination";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Userform from "./components/Userform";
+import "./App.css";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <NavBar />
 
       <Routes>
@@ -20,7 +21,7 @@ function App() {
       </Routes>
       
       <Footer />
-    </>
+    </div>
   );
 }
 
