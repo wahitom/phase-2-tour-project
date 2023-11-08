@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button ,Card, CardText, Container,Row,Col} from 'react-bootstrap'
-import './Destination.css'
+
 
 const Destination = () => {
   const handleViewPackage = () => {
@@ -11,9 +11,10 @@ const Destination = () => {
   return (
     <Container style={{
             display:'flex',
-      flexDirection:'column'
+      flexDirection:'column',
+    
+      
     }}>
-        
          <Row>
           <Col>
         <Card style={{  width: '30rem'}}>
@@ -54,7 +55,7 @@ const Destination = () => {
       <Row>
         <Col>
     
-    <Card style={{  width: '27rem'}}>
+    <Card style={{  width: '29rem'}}>
       <Card.Img variant="top" src=  "https://www.oceanbeachkenya.com/assets/images/mbanner/15a24a6716d0063d2af9331dd4fc8194.jpg"/>
       <Card.Body>
         <Card.Title>Malindi</Card.Title>
@@ -99,7 +100,7 @@ const Destination = () => {
         On the floor of the Great Rift Valley, surrounded by wooded and bushy grassland, lies the beautiful Lake Nakuru National Park. Visitors can enjoy the wide ecological diversity and varied habitats that range from Lake Nakuru itself to the surrounding escarpment and picturesque ridges. Lake Nakuru National Park is ideal for bird watching, hiking,picnic and game drives.
 
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button onClick={handleViewPackage}> View Package</Button>
       </Card.Body>
     </Card>
       
@@ -114,7 +115,7 @@ const Destination = () => {
         <Card.Text>
         The lodge sits at about 7,000 feet, from which elevation it enjoys magnificent views to the west and east. The Vistas stretch from the sparkling waters of Lake Naivasha to jogged volcanic crater of Mount Longonot and, beyond, the sloping shoulders of the Aberdare Mountains - Kenya's most important watershed
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button onClick={handleViewPackage}> View Package </Button>
       </Card.Body>
     </Card>
 
