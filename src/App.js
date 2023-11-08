@@ -1,11 +1,10 @@
-import Userform from "./components/Userform";
 
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Userform />
+    <div >
+    
     </div>
   );
 }
