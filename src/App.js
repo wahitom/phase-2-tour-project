@@ -7,11 +7,13 @@ import Offers from "./components/Offers";
 import Destination from "./components/Destination";
 import Home from "./components/Home";
 import Footer  from "./components/Footer";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <>
     <NavBar />
+    <SearchBar />
 
     <Routes>
       <Route path="/" element={<Home />} />
