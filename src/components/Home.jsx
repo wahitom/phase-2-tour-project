@@ -1,8 +1,11 @@
 import React from 'react'
+import Userform from './Userform'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Userform />
+    </div>
   )
 }
 
