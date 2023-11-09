@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router";
 import NavBar from "./components/NavBar";
-//import Availablepackages from "./components/Availablepackages";
+import Availablepackages from "./components/Availablepackages";
 import Offers from "./components/Offers";
 import Destination from "./components/Destination";
 import Home from "./components/Home";
