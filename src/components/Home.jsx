@@ -22,7 +22,7 @@ function Home() {
         <Carousel.Item>
         <img style={{height:"90vh", width:"100%"}} src="https://images.unsplash.com/photo-1556960146-ba4d5f5fa2f9?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></img>
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Game Drive</h3>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
