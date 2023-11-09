@@ -1,21 +1,23 @@
 import { useState, useEffect } from "react";
+import { Card, Col, Row } from "react-bootstrap";
 
 function Offers() {
   const [destinationsWithOffers, setDestinationsWithOffers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/travels")
+    fetch("http://localhost:3001/travels")
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          return "Network response was not ok";
         }
         return response.json();
       })
-      .then((data) => {
-        const travels = data.travels;
+      .then((travels) => {
+        //console.log(travels)
         // Filter destinations with offers and set the state
         const destinationsWithOffers = travels.filter((travel) => travel.offer);
         setDestinationsWithOffers(destinationsWithOffers);
+        //console.log(destinationsWithOffers)
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -24,28 +26,37 @@ function Offers() {
 
   return (
     <div>
-      <h1>Destinations with Offers</h1>
-      <ul>
-        {destinationsWithOffers.map((destination) => (
-          <div key={destination.id}>
-            <h2>{destination.destination}</h2>
-            <p>{destination.description}</p>
-            <img src={destination.image} alt={destination.destination} />
-            <p>Price: {destination.prices}</p>
-            <h3>Offers:</h3>
-            <ul>
-              {Object.entries(destination.offer).map(([month, discount]) => (
-                <li key={month}>
-                  {month}: {discount}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </ul>
-    </div>
-  );
+    <h3>Destinations with Offers</h3>
+
+    <Row>
+      {destinationsWithOffers.map((destination) => (
+        <Col key={destination.id} md={4}>
+          <Card margin="3px">
+            <Card.Body>
+              <Card.Title style={{ color: "red" }}>
+                {destination.destination}
+              </Card.Title>
+              <Card.Text>
+                <p>Price: {destination.prices}</p>
+                <h5>Offers:</h5>
+                <ul>
+                  {Object.entries(destination.offer).map(
+                    ([month, discount]) => (
+                      <li key={month}>
+                        {month}: {discount}
+                      </li>
+                    )
+                  )}
+                </ul>
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+  </div>
+);
 }
 
 export default Offers;
-
+  
