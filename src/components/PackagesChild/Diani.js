@@ -24,13 +24,13 @@ const MaasaiMara = () => {
     <>
       <Row xs={1} md={2} className="g-4">
         <Col>
-          <Card style={{ width: "150vh", height: "40vh" }}>
+          <Card style={{ width: "150vh", height: "45vh", border:"0" }}>
             <div style={{ display: "flex" }}>
               <div style={{ flex: 1 }}>
                 <Card.Img
                   variant="top"
                   src={destination.destinationImg}
-                  style={{ width: "70vh", height: "40vh" }}
+                  style={{ width: "70vh", height: "45vh" }}
                 />
                 {/* <CardImgOverlay>
                   <h1>{destination.destination}</h1>
