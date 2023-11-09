@@ -4,6 +4,7 @@ const SearchBar = () => {
   const [query, setQuery] = useState("");
   const [destination, setDestination] = useState([]);
   const [filteredDest, setFilteredDest] = useState([]);
+  const [isTyping, setIsTyping] = useState(false);
 
   useEffect(() => {
     fetch(" http://localhost:3001/travels")
@@ -18,6 +19,7 @@ const SearchBar = () => {
   function handleChange(event) {
     const value = event.target.value;
     setQuery(value);
+    setIsTyping(value !== "");
 
     const suggestion = destination.filter((destination) =>
       destination.toLowerCase().includes(value.toLowerCase())
@@ -31,23 +33,41 @@ const SearchBar = () => {
       item.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredDest(updatedQuery);
+    setIsTyping(false);
+  }
+
+  useEffect(() => {
+    return () => {
+      setFilteredDest([]);
+      setIsTyping(false);
+    };
+  }, []);
+
+  function populateSearchBar(value) {
+    setQuery(value);
   }
 
   return (
     <>
-      <div>
-        <div>SearchBar</div>
-        <input
-          placeholder="enter destination"
-          value={query}
-          onChange={handleChange}
-        ></input>
-        <button onClick={handleSearch}>Search</button>
+      <div className="input-group m-2 ">
+        <div className="px-4">
+          <input
+            className="py-1"
+            placeholder="enter destination"
+            value={query}
+            onChange={handleChange}
+          ></input>
+          <button className="btn btn-secondary m-1" onClick={handleSearch}>
+            Search
+          </button>
+        </div>
       </div>
       <div className="dropdown">
         {filteredDest &&
           filteredDest.map((destination) => (
-            <div key={destination}>{destination}</div>
+            <div onClick={() => populateSearchBar(destination)}>
+              {destination}
+            </div>
           ))}
       </div>
     </>
