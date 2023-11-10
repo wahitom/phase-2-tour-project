@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Malindi } from "./PackageData";
-
+import { NavLink } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Stack from "react-bootstrap/Stack";
 import { Col, Row } from "react-bootstrap";
 
-const MaasaiMara = () => {
+const Malindibeach = () => {
   const [showPackages, setShowPackages] = useState(false);
 
   const destination = Malindi.find((item) => item.destination === "Malindi");
@@ -259,4 +259,4 @@ const MaasaiMara = () => {
   );
 };
 
-export default MaasaiMara;
+export default Malindibeach;
