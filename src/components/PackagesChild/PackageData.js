@@ -1,8 +1,8 @@
-const Maasaimara = [
+const destinationpackages = [
   {
     id: "1",
     destination: "Maasai Mara",
-    destinationImage:
+    destinationImg:
       "https://images.pexels.com/photos/624063/pexels-photo-624063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 
     //three days package
@@ -50,11 +50,8 @@ const Maasaimara = [
     oneNightStay: "Price Per Night",
     basicPrices: "264",
   },
-];
-
-const Amboseli = [
   {
-    id: "1",
+    id: "2",
     destination: "Amboseli National Park",
     destinationImg:
       "https://images.unsplash.com/photo-1565856500593-6316b58958e1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -103,11 +100,9 @@ const Amboseli = [
     oneNightStay: "Price Per Night",
     basicPrices: "200",
   },
-];
 
-const Diani = [
   {
-    id: "1",
+    id: "3",
     destination: "Diani",
     destinationImg:
       "https://images.unsplash.com/photo-1691161510065-298039a5b51b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -156,11 +151,9 @@ const Diani = [
     oneNightStay: "Price Per Night",
     basicPrices: "264",
   },
-];
 
-const Malindi = [
   {
-    id: "1",
+    id: "4",
     destination: "Malindi",
     destinationImg:
       "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -209,11 +202,9 @@ const Malindi = [
     oneNightStay: "Price Per Night",
     basicPrices: "150",
   },
-];
 
-const NakuruNationalPark = [
   {
-    id: "1",
+    id: "5",
     destination: "Nakuru National Park",
     destinationImg:
       "https://images.unsplash.com/photo-1623745493572-ef78d94249f3?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -262,11 +253,9 @@ const NakuruNationalPark = [
     oneNightStay: "Price Per Night",
     basicPrices: "230",
   },
-];
 
-const RiftValleyLodge = [
   {
-    id: "1",
+    id: "6",
     destination: "Great Rift Valley Lodge",
     destinationImg:
       "https://images.unsplash.com/photo-1696231659533-bdb81ffaa661?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -317,10 +306,5 @@ const RiftValleyLodge = [
 ];
 
 export {
-  Maasaimara,
-  Amboseli,
-  NakuruNationalPark,
-  RiftValleyLodge,
-  Malindi,
-  Diani,
+  destinationpackages
 };
