@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./searchBar.css";
+import SearchResults from "./SearchResults";
 
 const SearchBar = () => {
   const [query, setQuery] = useState("");
@@ -8,13 +9,32 @@ const SearchBar = () => {
   const [isTyping, setIsTyping] = useState(false);
 
   useEffect(() => {
-    fetch(" http://localhost:3001/travels")
+    // Fetch Data for destinations and set it to Travels
+    fetch("http://localhost:3001/travels")
       .then((resp) => resp.json())
       .then((data) => {
         const travelHere = data.map((item) => item.destination);
         setDestination(travelHere);
       })
       .catch((err) => console.error(err));
+  }, []);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      const searchResults = document.getElementById("searchResults");
+
+      if (searchResults && !searchResults.contains(event.target)) {
+        // Click occurred outside SearchResults, hide it
+        setFilteredDest([]);
+        setIsTyping(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
   }, []);
 
   function handleChange(event) {
@@ -34,18 +54,12 @@ const SearchBar = () => {
       item.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredDest(updatedQuery);
-    setIsTyping(false);
+    setIsTyping(isTyping);
   }
-
-  useEffect(() => {
-    return () => {
-      setFilteredDest([]);
-      setIsTyping(false);
-    };
-  }, []);
 
   function populateSearchBar(value) {
     setQuery(value);
+    setFilteredDest([]);
   }
 
   return (
@@ -63,13 +77,11 @@ const SearchBar = () => {
           </button>
         </div>
       </div>
-      <div className="dropdown">
-        {filteredDest &&
-          filteredDest.map((destination) => (
-            <div onClick={() => populateSearchBar(destination)}>
-              {destination}
-            </div>
-          ))}
+      <div id="searchResults">
+        <SearchResults
+          filteredDest={filteredDest}
+          populateSearchBar={populateSearchBar}
+        />
       </div>
     </>
   );
