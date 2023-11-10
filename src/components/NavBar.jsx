@@ -44,6 +44,11 @@ function NavBar() {
                   Offers
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/userform">
+                  Book a Trip
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
