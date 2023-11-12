@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./searchBar.css";
 import SearchResults from "./SearchResults";
 
@@ -72,9 +73,11 @@ const SearchBar = () => {
             value={query}
             onChange={handleChange}
           ></input>
-          <button className="btn btn-secondary m-1" onClick={handleSearch}>
-            Search
-          </button>
+          <NavLink to="/destination">
+            <button className="btn btn-secondary m-1" onClick={handleSearch}>
+              Search
+            </button>
+          </NavLink>
         </div>
       </div>
       <div id="searchResults">

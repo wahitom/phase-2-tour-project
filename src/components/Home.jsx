@@ -14,6 +14,7 @@ function Home() {
       <Carousel>
         <Carousel.Item>
           <img
+            className="object-fit-cover border rounded"
             style={{ height: "90vh", width: "100%" }}
             src="https://images.unsplash.com/photo-1631152282084-b8f1b380ccab?q=80&w=1373&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           ></img>
@@ -26,6 +27,7 @@ function Home() {
         </Carousel.Item>
         <Carousel.Item>
           <img
+            className="object-fit-cover border rounded"
             style={{ height: "90vh", width: "100%" }}
             src="https://images.unsplash.com/photo-1535941339077-2dd1c7963098?q=80&w=1477&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           ></img>
@@ -38,6 +40,7 @@ function Home() {
         </Carousel.Item>
         <Carousel.Item>
           <img
+            className="object-fit-cover border rounded"
             style={{ height: "90vh", width: "100%" }}
             src="https://images.unsplash.com/photo-1556960146-ba4d5f5fa2f9?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           ></img>
@@ -50,6 +53,7 @@ function Home() {
         </Carousel.Item>
         <Carousel.Item>
           <img
+            className="object-fit-cover border rounded"
             style={{ height: "90vh", width: "100%" }}
             src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           ></img>
@@ -62,6 +66,7 @@ function Home() {
         </Carousel.Item>
         <Carousel.Item>
           <img
+            className="object-fit-cover border rounded"
             style={{ height: "90vh", width: "100%" }}
             src="https://plus.unsplash.com/premium_photo-1661846340419-89bf27138124?q=80&w=1392&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           ></img>
@@ -139,7 +144,7 @@ function Home() {
               <NavLink
                 className="nav-link active text-white "
                 aria-current="page"
-                to="/destinations"
+                to="/destination"
               >
                 View Destinations
               </NavLink>

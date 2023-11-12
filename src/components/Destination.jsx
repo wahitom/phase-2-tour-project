@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Stack from "react-bootstrap/Stack";
 import { Button, Card, CardText, Container, Row, Col } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Destination = () => {
   const handleViewPackage = () => {
@@ -23,9 +24,9 @@ const Destination = () => {
   return (
     <Container
       style={{
-        marginLeft:"0",
-        marginRight:"0",
-        padding:"0"
+        marginLeft: "0",
+        marginRight: "0",
+        padding: "0",
       }}
     >
       <Row>
@@ -44,7 +45,9 @@ const Destination = () => {
                 <Card.Title>{travel.destination}</Card.Title>
                 <Card.Text>{travel.description}</Card.Text>
                 <CardText>{travel.prices}</CardText>
-                <Button onClick={handleViewPackage}> View Package</Button>
+                <NavLink to="/availablepackages">
+                  <Button onClick={handleViewPackage}> View Package</Button>
+                </NavLink>
               </Card.Body>
             </Card>
           </Col>
