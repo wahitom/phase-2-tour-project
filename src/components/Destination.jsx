@@ -1,12 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Stack from "react-bootstrap/Stack";
+import { NavLink } from "react-router-dom";
 import { Button, Card, CardText, Container, Row, Col } from "react-bootstrap";
 
 const Destination = () => {
-  const handleViewPackage = () => {
-    alert("View Package button clicked");
-  };
+
 
   const [travels, setTravels] = useState([]);
 
@@ -44,7 +43,9 @@ const Destination = () => {
                 <Card.Title>{travel.destination}</Card.Title>
                 <Card.Text>{travel.description}</Card.Text>
                 <CardText>{travel.prices}</CardText>
-                <Button onClick={handleViewPackage}> View Package</Button>
+                <NavLink className="nav-link active text-white " aria-current="page" to="/availablepackages">
+                <Button variant="dark" className="nav-item " style={{marginTop:"0px"}}> View Package</Button>
+                </NavLink>
               </Card.Body>
             </Card>
           </Col>

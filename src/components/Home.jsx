@@ -121,7 +121,7 @@ function Home() {
             <h1>Pride Of Africa</h1>
             
             <Button variant="dark" className="nav-item " style={{marginTop:"30px"}}>
-                <NavLink className="nav-link active text-white " aria-current="page" to="/destinations">
+                <NavLink className="nav-link active text-white " aria-current="page" to="/destination">
                   View Destinations
                 </NavLink>
               </Button>
