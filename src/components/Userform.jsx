@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Container from "react-bootstrap/Container";
+import SearchBar from "./SearchBar";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
@@ -62,6 +62,7 @@ const Userform = () => {
 
  return (
    <div>
+    <SearchBar />
      <Form
        onSubmit={(event) => handleSubmit(event)}
        className="form bg-dark text-white"

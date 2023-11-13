@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
+import  logo  from "../logo-color.png"
 
 function NavBar() {
   return (
     <div className="NavBar" style={{ backgroundColor: "#414833" }}>
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid ml-5">
-          <a className="navbar-brand text-white" to="/">
-            Tours App
-          </a>
+          <img className="logo"  to="/" src={logo} style={{height: "50px", width:"80px", marginRight:"50px"}}/>
+            
           <button
             className="navbar-toggler"
             type="button"
