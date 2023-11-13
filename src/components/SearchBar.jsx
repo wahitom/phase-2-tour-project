@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./searchBar.css";
 import SearchResults from "./SearchResults";
 
-const SearchBar = () => {
+const SearchBar = ({BASE_URL}) => {
   const [query, setQuery] = useState("");
   const [destination, setDestination] = useState([]);
   const [filteredDest, setFilteredDest] = useState([]);
@@ -11,7 +11,7 @@ const SearchBar = () => {
 
   useEffect(() => {
     // Fetch Data for destinations and set it to Travels
-    fetch("http://localhost:/travels")
+    fetch(BASE_URL)
       .then((resp) => resp.json())
       .then((data) => {
         const travelHere = data.map((item) => item.destination);

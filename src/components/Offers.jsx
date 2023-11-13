@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-function Offers() {
+function Offers({BASE_URL}) {
   const [destinationsWithOffers, setDestinationsWithOffers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/travels")
+    fetch(BASE_URL)
       .then((response) => {
         if (!response.ok) {
           return "Network response was not ok";

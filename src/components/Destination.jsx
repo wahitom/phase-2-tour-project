@@ -4,11 +4,14 @@ import { NavLink } from "react-router-dom";
 import { Button, Card, CardText, Container, Row, Col } from "react-bootstrap";
 
 
-const Destination = () => {
+
+const Destination = ({BASE_URL}) => {
+console.log(BASE_URL)
+
   const [travels, setTravels] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/travels")
+    fetch(BASE_URL)
       .then((response) => response.json())
       .then((travels) => {
         setTravels(travels);

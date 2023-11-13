@@ -6,7 +6,9 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 
-const Userform = () => {
+const Userform = ({BASE_URL}) => {
+
+
  const [selectDestination, setSelectDestination] = useState([]);
  const [formData, setFormData] = useState({
    destination: "",
@@ -21,7 +23,7 @@ const Userform = () => {
 
 
  useEffect(() => {
-   fetch("http://localhost:8000/travels")
+   fetch(BASE_URL)
      .then((resp) => resp.json())
      .then((data) => {
        const updateDestination = data.map((item) => item.destination);
@@ -62,7 +64,7 @@ const Userform = () => {
 
  return (
    <div>
-    <SearchBar />
+    <SearchBar BASE_URL={BASE_URL}/>
      <Form
        onSubmit={(event) => handleSubmit(event)}
        className="form bg-dark text-white"
