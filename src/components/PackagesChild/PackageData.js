@@ -1,10 +1,11 @@
-const destinationpackages = [
+const destinations = [
   {
     id: "1",
     destination: "Maasai Mara",
     destinationImg:
       "https://images.pexels.com/photos/624063/pexels-photo-624063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-
+ 
+ 
     //three days package
     threeDayerImg:
       "https://images.pexels.com/photos/2343011/pexels-photo-2343011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -15,7 +16,8 @@ const destinationpackages = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "350",
-
+ 
+ 
     //four days package
     fourDayer: "4 days getaway",
     fourDayerImg:
@@ -26,7 +28,8 @@ const destinationpackages = [
     fourDayerActivity4: "Camping",
     fourDayerActivity5: "",
     fourDayerPrices: "450",
-
+ 
+ 
     //five days package
     fiveDayer: "5 days getaway",
     fiveDayerImg:
@@ -37,7 +40,8 @@ const destinationpackages = [
     fiveDayerActivity4: "Camping",
     fiveDayerActivity5: "Bonfire",
     fiveDayerPrices: "550",
-
+ 
+ 
     //weekend package
     weekend: "Weekend Getaway",
     weekendImg:
@@ -45,7 +49,8 @@ const destinationpackages = [
     weekendActivity1: "Game Drive",
     weekendActivity2: "Bonfire",
     weekendPrices: "300",
-
+ 
+ 
     //per night/basic package
     oneNightStay: "Price Per Night",
     basicPrices: "264",
@@ -55,7 +60,8 @@ const destinationpackages = [
     destination: "Amboseli National Park",
     destinationImg:
       "https://images.unsplash.com/photo-1565856500593-6316b58958e1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+ 
+ 
     //three day package
     threeDayer: "3 days getaway",
     threeDayerImg:
@@ -66,7 +72,8 @@ const destinationpackages = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "400",
-
+ 
+ 
     //four day package
     fourDayer: "4 days getaway",
     fourDayerImg:
@@ -77,7 +84,8 @@ const destinationpackages = [
     fourDayerActivity4: "Camping",
     fourDayerActivity5: "",
     fourDayerPrices: "550",
-
+ 
+ 
     //five day package
     fiveDayer: "5 days getaway",
     fiveDayerImg:
@@ -88,7 +96,8 @@ const destinationpackages = [
     fiveDayerActivity4: "Camping",
     fiveDayerActivity5: "Bonfire",
     fiveDayerPrices: "650",
-
+ 
+ 
     //weekend package
     weekend: "Weekend Getaway",
     weekendImg:
@@ -96,17 +105,18 @@ const destinationpackages = [
     weekendActivity1: "Game Drive",
     weekendActivity2: "camping",
     weekendPrices: "350",
-
+ 
+ 
     oneNightStay: "Price Per Night",
     basicPrices: "200",
   },
-
   {
     id: "3",
     destination: "Diani",
     destinationImg:
       "https://images.unsplash.com/photo-1691161510065-298039a5b51b?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+ 
+ 
     //three day package
     threeDayer: "3 days getaway",
     threeDayerImg:
@@ -117,7 +127,8 @@ const destinationpackages = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "350",
-
+ 
+ 
     //four day package
     fourDayer: "4 days getaway",
     fourDayerImg:
@@ -128,7 +139,8 @@ const destinationpackages = [
     fourDayerActivity4: "Swimming",
     fourDayerActivity5: "",
     fourDayerPrices: "450",
-
+ 
+ 
     //five day package
     fiveDayer: "5 days getaway",
     fiveDayerImg:
@@ -139,7 +151,8 @@ const destinationpackages = [
     fiveDayerActivity4: "Beach Sports",
     fiveDayerActivity5: "Canoeing",
     fiveDayerPrices: "550",
-
+ 
+ 
     //weekend package
     weekend: "Weekend Getaway",
     weekendImg:
@@ -147,17 +160,18 @@ const destinationpackages = [
     weekendActivity1: "Canoeing",
     weekendActivity2: "Snorkeling",
     weekendPrices: "300",
-
+ 
+ 
     oneNightStay: "Price Per Night",
     basicPrices: "264",
   },
-
   {
     id: "4",
     destination: "Malindi",
     destinationImg:
       "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+ 
+ 
     //three day package
     threeDayer: "3 days getaway",
     threeDayerImg:
@@ -168,7 +182,8 @@ const destinationpackages = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "350",
-
+ 
+ 
     //four day package
     fourDayer: "4 days getaway",
     fourDayerImg:
@@ -179,7 +194,8 @@ const destinationpackages = [
     fourDayerActivity4: "Swimming",
     fourDayerActivity5: "",
     fourDayerPrices: "450",
-
+ 
+ 
     //five day package
     fiveDayer: "5 days getaway",
     fiveDayerImg:
@@ -190,7 +206,8 @@ const destinationpackages = [
     fiveDayerActivity4: "Beach Sports",
     fiveDayerActivity5: "Canoeing",
     fiveDayerPrices: "550",
-
+ 
+ 
     //weekend package
     weekend: "Weekend Getaway",
     weekendImg:
@@ -198,17 +215,18 @@ const destinationpackages = [
     weekendActivity1: "Canoeing",
     weekendActivity2: "Snorkeling",
     weekendPrices: "300",
-
+ 
+ 
     oneNightStay: "Price Per Night",
     basicPrices: "150",
   },
-
   {
     id: "5",
     destination: "Nakuru National Park",
     destinationImg:
       "https://images.unsplash.com/photo-1623745493572-ef78d94249f3?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+ 
+ 
     //three day package
     threeDayer: "3 days getaway",
     threeDayerImg:
@@ -219,7 +237,8 @@ const destinationpackages = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "350",
-
+ 
+ 
     //four day package
     fourDayer: "4 days getaway",
     fourDayerImg:
@@ -230,7 +249,8 @@ const destinationpackages = [
     fourDayerActivity4: "Bush Dinner",
     fourDayerActivity5: "",
     fourDayerPrices: "450",
-
+ 
+ 
     //five day package
     fiveDayer: "5 days getaway",
     fiveDayerImg:
@@ -241,7 +261,8 @@ const destinationpackages = [
     fiveDayerActivity4: "Bonfire",
     fiveDayerActivity5: "Bush Dinner",
     fiveDayerPrices: "550",
-
+ 
+ 
     //weekend package
     weekend: "Weekend GetAway",
     weekendImg:
@@ -249,17 +270,18 @@ const destinationpackages = [
     weekendActivity1: "Bush Dinner",
     weekendActivity2: "Game Drive",
     weekendPrices: "300",
-
+ 
+ 
     oneNightStay: "Price Per Night",
     basicPrices: "230",
   },
-
   {
     id: "6",
     destination: "Great Rift Valley Lodge",
     destinationImg:
       "https://images.unsplash.com/photo-1696231659533-bdb81ffaa661?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-
+ 
+ 
     //three day package
     threeDayer: "3 days getaway",
     threeDayerImg:
@@ -270,7 +292,8 @@ const destinationpackages = [
     threeDayerActivity4: "",
     threeDayerActivity5: "",
     threeDayerPrices: "350",
-
+ 
+ 
     //four days package
     fourDayer: "4 days getaway",
     fourDayerImg:
@@ -281,7 +304,8 @@ const destinationpackages = [
     fourDayerActivity4: "Hiking",
     fourDayerActivity5: "",
     fourDayerPrices: "450",
-
+ 
+ 
     //five day package
     fiveDayer: "5 days getaway",
     fiveDayerImg:
@@ -292,19 +316,27 @@ const destinationpackages = [
     fiveDayerActivity4: "Bonfire",
     fiveDayerActivity5: "Hot Air Ballooning",
     fiveDayerPrices: "550",
-
+ 
+ 
     weekend: "Weekend Getaway",
     weekendImg:
       "https://images.unsplash.com/photo-1696231659224-238807a99a06?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     weekendActivity1: "Game Drive",
     weekendActivity2: "Camping",
     weekendPrices: "300",
-
+ 
+ 
     oneNightStay: "Price Per Night",
     basicPrices: "160",
   },
-];
-
-export {
-  destinationpackages
-};
+ ];
+ 
+ 
+ export {
+  //Maasaimara,
+  destinations,
+ };
+ 
+ 
+ 
+ 
