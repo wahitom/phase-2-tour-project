@@ -5,7 +5,7 @@ function Offers() {
   const [destinationsWithOffers, setDestinationsWithOffers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/travels")
+    fetch("http://localhost:8000/travels")
       .then((response) => {
         if (!response.ok) {
           return "Network response was not ok";
