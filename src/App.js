@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Userform from "./components/Userform";
 import "./App.css";
 
-const BASE_URL = "https://my-json-server.typicode.com/daveobat8/phase-2-tour-project"
+const BASE_URL = " http://localhost:8000/travels"
 
 function App() {
 
