@@ -11,7 +11,7 @@ const SearchBar = () => {
 
   useEffect(() => {
     // Fetch Data for destinations and set it to Travels
-    fetch("http://localhost:3001/travels")
+    fetch("http://localhost:/travels")
       .then((resp) => resp.json())
       .then((data) => {
         const travelHere = data.map((item) => item.destination);
