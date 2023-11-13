@@ -3,10 +3,9 @@ import { useState, useEffect } from "react";
 import Stack from "react-bootstrap/Stack";
 import { NavLink } from "react-router-dom";
 import { Button, Card, CardText, Container, Row, Col } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Destination = () => {
-
-
   const [travels, setTravels] = useState([]);
 
   useEffect(() => {
@@ -22,9 +21,9 @@ const Destination = () => {
   return (
     <Container
       style={{
-        marginLeft:"0",
-        marginRight:"0",
-        padding:"0"
+        marginLeft: "0",
+        marginRight: "0",
+        padding: "0",
       }}
     >
       <Row>
@@ -43,8 +42,19 @@ const Destination = () => {
                 <Card.Title>{travel.destination}</Card.Title>
                 <Card.Text>{travel.description}</Card.Text>
                 <CardText>{travel.prices}</CardText>
-                <NavLink className="nav-link active text-white " aria-current="page" to="/availablepackages">
-                <Button variant="dark" className="nav-item " style={{marginTop:"0px"}}> View Package</Button>
+                <NavLink
+                  className="nav-link active text-white "
+                  aria-current="page"
+                  to="/availablepackages"
+                >
+                  <Button
+                    variant="dark"
+                    className="nav-item "
+                    style={{ marginTop: "0px" }}
+                  >
+                    {" "}
+                    View Package
+                  </Button>
                 </NavLink>
               </Card.Body>
             </Card>

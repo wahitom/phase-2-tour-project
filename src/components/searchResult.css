@@ -1,0 +1,11 @@
+.filteredResult {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: whitesmoke;
+}
+.result:hover {
+  background-color: #c2c5aa;
+  cursor: pointer;
+  width: 1200px;
+}

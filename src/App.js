@@ -8,11 +8,13 @@ import PackagesCard from "./components/PackagesChild/PackagesCard";
 import Footer from "./components/Footer";
 import Userform from "./components/Userform";
 import "./App.css";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <SearchBar />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +24,7 @@ function App() {
         <Route path="/userform" element={<Userform />} />
         <Route path="/morepackages/:id" element={<PackagesCard />} />
       </Routes>
-      
+
       <Footer />
     </div>
   );

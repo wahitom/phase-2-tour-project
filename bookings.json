@@ -1,0 +1,32 @@
+{
+  "bookings": [
+    {
+      "id": 1,
+      "Destination": "Maasai Mara",
+      "First Name": "John",
+      "Last Name": "Doe",
+      "Phone": "0700000000",
+      "Email": "johndoe@me.com",
+      "Checkin Date": "12/12/2012",
+      "Checkout Date": "1/1/2013",
+      "People": 5
+    },
+    {
+      "id": 2,
+      "Destination": "Maasai Mara",
+      "First Name": "Jane",
+      "Last Name": "Doe",
+      "Phone": "0700455454",
+      "Email": "johndoe@me.com",
+      "Checkin Date": "12/12/2012",
+      "Checkout Date": "1/1/2013",
+      "People": 5
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ]
+}
