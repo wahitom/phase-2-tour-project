@@ -2,8 +2,8 @@
   "name": "phase-2-tour-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://daveobat8.github.io/phase-2-tour-project",
   "dependencies": {
-    "homepage": "https://daveobat8.github.io/phase-2-tour-project",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
