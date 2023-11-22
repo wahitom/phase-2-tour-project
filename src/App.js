@@ -12,8 +12,6 @@ import "./App.css";
 const BASE_URL = "https://my-json-server.typicode.com/daveobat8/phase-2-tour-project/travels"
 
 function App() {
-
-
   return (
     <div className="App">
       <NavBar />
