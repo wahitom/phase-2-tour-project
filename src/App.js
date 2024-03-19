@@ -9,7 +9,8 @@ import Footer from "./components/Footer";
 import Userform from "./components/Userform";
 import "./App.css";
 
-const BASE_URL = "https://my-json-server.typicode.com/daveobat8/phase-2-tour-project/travels"
+// const BASE_URL =
+//   "https://my-json-server.typicode.com/wahitom/phase-2-tour-project/db";
 
 function App() {
   return (
@@ -17,10 +18,10 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/destination" element={<Destination BASE_URL={BASE_URL} />} />
+        <Route path="/destination" element={<Destination />} />
         <Route path="/availablepackages" element={<Availablepackages />} />
-        <Route path="/offers" element={<Offers BASE_URL={BASE_URL} />} />
-        <Route path="/userform" element={<Userform BASE_URL={BASE_URL} />} />
+        <Route path="/offers" element={<Offers />} />
+        <Route path="/userform" element={<Userform />} />
         <Route path="/morepackages/:id" element={<PackagesCard />} />
       </Routes>
 

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { BASE_URL } from "../utils";
 
-function Offers({BASE_URL}) {
+function Offers() {
   const [destinationsWithOffers, setDestinationsWithOffers] = useState([]);
 
   useEffect(() => {

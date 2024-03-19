@@ -2,11 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Button, Card, CardText, Container, Row, Col } from "react-bootstrap";
+import { BASE_URL } from "../utils";
 
-
-
-const Destination = ({BASE_URL}) => {
-console.log(BASE_URL)
+const Destination = () => {
+  console.log(BASE_URL);
 
   const [travels, setTravels] = useState([]);
 
